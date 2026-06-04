@@ -50,15 +50,15 @@ git init
 
 ### 2. Rename the project
 
-Search-and-replace the placeholder name everywhere. The template name is **`IdeaPaddy`**
+Search-and-replace the placeholder name everywhere. The template name is **`default`**
 (display name) and **`default`** (package name):
 
 - `package.json` → `"name": "default"` → your project slug
-- `src/app/layout.tsx` → `metadata.title: 'IdeaPaddy'`
-- `src/app/page.tsx` → `<h1>IdeaPaddy</h1>`
-- `src/app/(protected)/layout.tsx` → `<span className={styles.brand}>IdeaPaddy</span>`
+- `src/app/layout.tsx` → `metadata.title: 'default'`
+- `src/app/page.tsx` → `<h1>default</h1>`
+- `src/app/(protected)/layout.tsx` → `<span className={styles.brand}>default</span>`
 
-Quick find: `grep -rn "IdeaPaddy" src/`
+Quick find: `grep -rn "default" src/`
 
 ### 3. Install dependencies
 
@@ -189,7 +189,7 @@ middleware.ts                # session refresh + route protection
 ## Quick Checklist (copy this when starting a new project)
 
 - [ ] `rm -rf .git && git init`
-- [ ] Rename `IdeaPaddy` / `default` → new name (4 spots, see step 2)
+- [ ] Rename `default` / `default` → new name (4 spots, see step 2)
 - [ ] `pnpm install`
 - [ ] `cp .env.example .env.local` and fill in Supabase keys
 - [ ] Set up DB (`supabase start` + `db reset`, or `link` + `db push`)
